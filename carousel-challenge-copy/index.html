@@ -19,8 +19,8 @@
   <body>
     
 <header>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <div class="container-fluid">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark d-flex flex-column mb-3">
+    <div class="p-2 container-fluid">
       <a class="navbar-brand" href="#">Carousel</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -51,14 +51,11 @@
 
 <main>
 
-
-
-
-  <!-- Marketing messaging and featurettes
   ================================================== -->
   <!-- Wrap the rest of the page in another container to center all the content. -->
 
-  <div class="container marketing dt-responsive">
+<div class="d-flex flex-wrap">
+  <div class="container marketing">
 
     <!-- Three columns of text below the carousel -->
     <div class="row" style="margin-top: 4em;">
@@ -67,12 +64,17 @@
       <div class="col-lg-7">
         <h2 class="fw-normal">Summary: Latitude vs. X</h2>
         <img src="https://via.placeholder.com/400">
-        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.
-          Some representative placeholder content for the three columns of text below the carousel. This is the first column.
-          Some representative placeholder content for the three columns of text below the carousel. This is the first column.
-          Some representative placeholder content for the three columns of text below the carousel. This is the first column.
-          Some representative placeholder content for the three columns of text below the carousel. This is the first column.
-          Some representative placeholder content for the three columns of text below the carousel. This is the first column.
+        <br>
+        <br>
+        <p>The purpose of this project was to analyze how weather changes as you get closer
+          to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API
+          to assemble a dataset over 500 cities.
+          <br>
+          <br>
+          After assembling the dataset, we used Matplotlib to plot various aspects of the
+          weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed,
+          and humidity. This site provides the source data and visualizations created as part of
+          the analysis, as well as explanations and descriptions of any trends and correlations withnessed.
         </p>
       </div><!-- /.col-lg-4 -->
       
@@ -96,6 +98,7 @@
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
   </div><!-- /.container -->
+</div><!--/.flex container-->
 
 
   <!-- FOOTER -->
